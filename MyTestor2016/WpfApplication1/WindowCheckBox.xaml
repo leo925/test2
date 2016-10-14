@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApplication1.WindowCheckBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowCheckBox" Height="300" Width="300">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type AccessKeyPressedEventArgs}" x:Key="A">
+            <Grid>
+                
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate DataType="{x:Type CacheModeConverter}">
+            <Button></Button>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <CheckBox >
+            <CheckBox.Content>
+                <StackPanel MouseDown="StackPanel_MouseDown">
+                    <Label >dfdfadfdsfdf</Label>
+                    <ComboBox Width="100" Height="20" IsEnabled="False" IsReadOnly="True" IsManipulationEnabled="False"></ComboBox>
+                </StackPanel>
+            </CheckBox.Content>
+        </CheckBox>
+        <!-- for need the same bu 
+        -->
+         
+        <ContentControl Content="{Binding A}" ContentTemplate="{StaticResource ResourceKey=A}">
+             
+        </ContentControl>
+        
+        <ContentControl Content="{Binding D}"></ContentControl>
+    </Grid>
+</Window>
