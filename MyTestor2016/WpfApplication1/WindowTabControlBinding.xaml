@@ -1,0 +1,54 @@
+﻿<Window x:Class="WpfApplication1.WindowTabControlBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowTabControlBinding" Height="300" Width="300">
+    <Grid Name="gridRoot">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <DataTemplate x:Key="headerTemp" >
+                    <Grid Background="Red">
+                        <StackPanel>
+
+                            <TextBlock Text="{Binding Name,TargetNullValue=not found,FallbackValue=not found}"></TextBlock>
+                            <TextBlock Text="new "></TextBlock>
+
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0"  Width="100" Height="30" Content="click" Click="Button_Click"></Button>
+        <TabControl x:Name="tcResult" Grid.Row="1" ItemsSource="{Binding Tabs}" SelectionChanged="tcResult_SelectionChanged"
+                    SelectedItem="{Binding SelecteItem}">
+            <TabItem x:Name="tab1">
+                <TabItem.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text=":::"></TextBlock>
+                            <TextBlock Text="111"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </TabItem.HeaderTemplate>
+                <TextBlock Text="sdf"></TextBlock>
+            </TabItem>
+
+            <TabItem x:Name="tab2"  >
+                <TabItem.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text=":::"></TextBlock>
+                            <TextBlock Text="dsfdsf" ></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </TabItem.HeaderTemplate>
+                <TextBlock Text="dfdfdf"></TextBlock>
+            </TabItem>
+            
+        </TabControl>
+    </Grid>
+</Window>

@@ -22,6 +22,8 @@ namespace WpfApplication1
     {
         public UCReadStationLiveEventScreen()
         {
+            ItemsControl ic = new ItemsControl();
+            
             InitializeComponent();
         }
 

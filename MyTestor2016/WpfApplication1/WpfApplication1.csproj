@@ -67,8 +67,14 @@
     <Compile Include="WindowCheckBox.xaml.cs">
       <DependentUpon>WindowCheckBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowGridBringIntoView.xaml.cs">
+      <DependentUpon>WindowGridBringIntoView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowTabControl.xaml.cs">
       <DependentUpon>WindowTabControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowTabControlBinding.xaml.cs">
+      <DependentUpon>WindowTabControlBinding.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -94,7 +100,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowGridBringIntoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowTabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowTabControlBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,6 +145,9 @@
       <Project>{bf78856c-13ec-4fbb-a72b-616613787b56}</Project>
       <Name>Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

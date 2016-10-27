@@ -11,6 +11,12 @@ namespace WebAngular
     {
         public static void RegisterRoutes( RouteCollection routes )
         {
+            var ab = new
+            {
+                A="sdf",
+                b=12
+            };
+
             routes.IgnoreRoute( "{resource}.axd/{*pathInfo}" );
 
             routes.MapRoute(

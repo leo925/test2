@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAngular", "WebAngular\WebAngular.csproj", "{2EF6F945-3DA1-4D0B-8ADF-47683D0F7321}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormForHTML", "WebFormForHTML\WebFormForHTML.csproj", "{982DD732-11A7-470F-B994-05BBD4DCF477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeoErrorMessage", "LeoErrorMessage\LeoErrorMessage.csproj", "{711026A4-5DBA-49B8-AD3E-D6FF7A366B84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2EF6F945-3DA1-4D0B-8ADF-47683D0F7321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EF6F945-3DA1-4D0B-8ADF-47683D0F7321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EF6F945-3DA1-4D0B-8ADF-47683D0F7321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982DD732-11A7-470F-B994-05BBD4DCF477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982DD732-11A7-470F-B994-05BBD4DCF477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982DD732-11A7-470F-B994-05BBD4DCF477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982DD732-11A7-470F-B994-05BBD4DCF477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711026A4-5DBA-49B8-AD3E-D6FF7A366B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711026A4-5DBA-49B8-AD3E-D6FF7A366B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711026A4-5DBA-49B8-AD3E-D6FF7A366B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711026A4-5DBA-49B8-AD3E-D6FF7A366B84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
